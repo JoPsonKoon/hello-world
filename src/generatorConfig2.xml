@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-	<classPathEntry
-		location="/Users/jopson/Documents/Manager/apache-maven/MavenRepository/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar" />
+	<classPathEntry location="/Users/jopson/Documents/Manager/apache-maven/MavenRepository/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar" />
 	<context id="context1">
 		<commentGenerator>
 			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
@@ -11,10 +10,12 @@
 		
 		<jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/hhmao?useUnicode\=true&amp;characterEncoding\=UTF-8" driverClass="com.mysql.jdbc.Driver" password="123" userId="root" />
 		
-		<javaModelGenerator targetPackage="com.hhmao.core.logistics.schema.lgparcelinfo" targetProject="Test" />
-		<sqlMapGenerator targetPackage="com.hhmao.core.server.logistics.dao" targetProject="Test" />
+		<javaModelGenerator targetPackage="com.hhmao.core.loan.schema" targetProject="Test" />
+		<sqlMapGenerator targetPackage="com.hhmao.core.server.loan.dao" targetProject="Test" />
 		
-		<javaClientGenerator targetPackage="com.hhmao.core.server.logistics.dao" targetProject="Test" type="XMLMAPPER" />
-		<table schema="LgParcelInfo" tableName="lg_parcel_info"></table>
+		<javaClientGenerator targetPackage="com.hhmao.core.server.loan.dao" targetProject="Test" type="XMLMAPPER" />
+		<table schema="LoanDiscountApproving" tableName="loan_discount_approving"></table>
+		<table schema="LoanDiscountApprovingFlow" tableName="loan_discount_approving_flow"></table>
+
 	</context>
 </generatorConfiguration>
