@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class RiLiTest {
+public class CalendarTest {
 	public static void main(String[] args){
 
         SimpleDateFormat 格式=new SimpleDateFormat("y年M月d日 E H时m分s秒",Locale.CHINA);
